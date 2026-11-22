@@ -27,6 +27,9 @@ const SWITCH_TIME := 0.35            # durée de la rotation lors d'un changemen
 const SWITCH_RANGE := 80.0           # portée du "visé" de surface
 const SWITCH_COOLDOWN := 0.5
 
+## Mettre à true pour que les bots tirent à nouveau.
+const BOTS_CAN_SHOOT := false
+
 const MAX_AMMO := 12
 const FIRE_DELAY := 0.15
 const RELOAD_TIME := 1.3
@@ -577,7 +580,7 @@ func _bot_brain(delta: float) -> Array:
 			move.y = -1.0
 		elif dist < 6.0:
 			move.y = 1.0
-		if _bot_fire_cd <= 0.0 and _has_line_of_sight(_bot_target):
+		if BOTS_CAN_SHOOT and _bot_fire_cd <= 0.0 and _has_line_of_sight(_bot_target):
 			var facing := 1.0
 			if flat.length() > 0.1:
 				facing = (-global_transform.basis.z).dot(flat.normalized())

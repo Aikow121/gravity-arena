@@ -19,14 +19,18 @@ permet de courir sur les murs, au plafond ou sur les faces du cube flottant cent
 | Action | Touche |
 |---|---|
 | Se déplacer | ZQSD (AZERTY) / WASD (QWERTY) / flèches |
-| Sprint | Maj |
-| Sauter | Espace |
+| Sprint (en avançant) | Maj (maintenir) |
+| Sauter / double saut | Espace (appuyer à nouveau en l'air) |
+| Glissade (en courant) | Ctrl ou C |
 | Tirer | Clic gauche |
 | Gravité vers la surface visée | Clic droit ou **E** (cercle vert = possible) |
 | Revenir à la gravité normale | **F** |
 | Recharger | R |
 | Tableau des scores | Tab (maintenir) |
 | Libérer la souris | Échap (cliquer pour reprendre) |
+
+Pendant un changement de gravité, la caméra garde sa position et sa direction : seul l'horizon pivote.
+Astuce : glisser puis sauter garde l'élan de la glissade.
 
 Pistolet : 12 balles, 25 dégâts au corps, 60 à la tête, 100 PV par joueur, réapparition après 2,5 s.
 

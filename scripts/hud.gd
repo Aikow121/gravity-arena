@@ -96,7 +96,7 @@ func _ready() -> void:
 
 	var help := _make_label(13)
 	help.modulate = Color(1, 1, 1, 0.7)
-	help.text = "ZQSD/WASD bouger · Maj sprint · Espace sauter · Clic G tirer · Clic D ou E : gravité vers la surface visée · F : gravité normale · R recharger · Tab scores · Échap souris"
+	help.text = "ZQSD/WASD bouger · Maj sprint · Ctrl/C glissade · Espace (x2) sauter · Clic G tirer · Clic D ou E : gravité vers la surface visée · F : gravité normale · R recharger · Tab scores · Échap souris"
 	_root.add_child(help)
 	help.set_anchors_and_offsets_preset(Control.PRESET_CENTER_BOTTOM, Control.PRESET_MODE_MINSIZE, 6)
 	help.grow_horizontal = Control.GROW_DIRECTION_BOTH

@@ -64,6 +64,7 @@ func _setup_input() -> void:
 	_add_key("move_right", [KEY_D, KEY_RIGHT])
 	_add_key("jump", [KEY_SPACE])
 	_add_key("sprint", [KEY_SHIFT])
+	_add_key("slide", [KEY_CTRL, KEY_C])
 	_add_key("reload", [KEY_R])
 	_add_key("gravity_switch", [KEY_E])
 	_add_key("gravity_reset", [KEY_F])
@@ -194,7 +195,7 @@ func _build_menu() -> void:
 	var help := Label.new()
 	help.add_theme_font_size_override("font_size", 13)
 	help.modulate = Color(1, 1, 1, 0.75)
-	help.text = "Clic droit ou E : la surface visée devient votre sol (cercle vert = possible)\nF : revenir à la gravité normale · Tête = 60 dégâts, corps = 25\nLes bots sont ajoutés par l'hôte, en solo comme en réseau."
+	help.text = "Clic droit ou E : la surface visée devient votre sol (cercle vert = possible)\nF : gravité normale · Maj : sprint · Ctrl/C : glissade · Espace x2 : double saut\nTête = 60 dégâts, corps = 25 · Les bots sont ajoutés par l'hôte, en solo comme en réseau."
 	vb.add_child(help)
 
 

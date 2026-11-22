@@ -1,0 +1,20 @@
+; Engine configuration file.
+; Projet : Gravity Arena (Godot 4.3+)
+
+config_version=5
+
+[application]
+
+config/name="Gravity Arena"
+config/description="FPS en arène : changez votre gravité pour courir sur les murs et le plafond."
+run/main_scene="res://scenes/main.tscn"
+config/features=PackedStringArray("4.3", "Forward Plus")
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+
+[physics]
+
+common/physics_ticks_per_second=60
